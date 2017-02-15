@@ -36,15 +36,17 @@ class BeaconStatisticsViewController: UIViewController, ESTBeaconManagerDelegate
         
         if let nearest = sortedBeacons.first {
             
-            
-            
-            if nearest.major.int32Value == 58791{
+            if nearest.major.int32Value == 58791 {
+                
+                let Distance = round((nearest.accuracy)*1000)/1000 //四捨五入取至小數第三位
                 
                 RSSILabel.text  = "RSSI = \(nearest.rssi)"
-                DistLabel.text  = "Dist = \(nearest.accuracy)"
+                DistLabel.text  = "Dist = \(Distance) m"
+                //DistLabel.text  = "Dist = \(Float(nearest.accuracy))"
                 
                 print("RSSI  = \(nearest.rssi)")
-                print("Dist = \(Float(nearest.accuracy)) m")
+                print("Dist = \(Distance) m")
+                //print("Dist = \(Float(nearest.accuracy)) m")
                 
                 count = count + 1
                 SumRSSI = SumRSSI + (nearest.rssi)
