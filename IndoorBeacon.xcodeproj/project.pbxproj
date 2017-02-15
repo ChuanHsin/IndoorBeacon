@@ -16,6 +16,7 @@
 		1C441BA41E1DD8CF00C1FBED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C441BA21E1DD8CF00C1FBED /* LaunchScreen.storyboard */; };
 		1C441BBA1E1DEF7500C1FBED /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C441BB91E1DEF7400C1FBED /* EstimoteSDK.framework */; };
 		1C441BBC1E1DF07700C1FBED /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C441BBB1E1DF07700C1FBED /* EstimoteSDK.framework */; };
+		1C44381C1E4D5AD9001BDE21 /* BeaconStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44381B1E4D5AD9001BDE21 /* BeaconStatisticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		1C441BB31E1DE12600C1FBED /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		1C441BB91E1DEF7400C1FBED /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 		1C441BBB1E1DF07700C1FBED /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		1C44381B1E4D5AD9001BDE21 /* BeaconStatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconStatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				1C441B991E1DD8CF00C1FBED /* AppDelegate.swift */,
 				1C441B9B1E1DD8CF00C1FBED /* ViewController.swift */,
+				1C44381B1E4D5AD9001BDE21 /* BeaconStatisticsViewController.swift */,
 				1C441B9D1E1DD8CF00C1FBED /* Main.storyboard */,
 				1C441BA01E1DD8CF00C1FBED /* Assets.xcassets */,
 				1C441BA21E1DD8CF00C1FBED /* LaunchScreen.storyboard */,
@@ -164,6 +167,7 @@
 				1C441B9C1E1DD8CF00C1FBED /* ViewController.swift in Sources */,
 				1C441B9A1E1DD8CF00C1FBED /* AppDelegate.swift in Sources */,
 				1C326F441E2CA5FB00DD162F /* BeaconListViewController.swift in Sources */,
+				1C44381C1E4D5AD9001BDE21 /* BeaconStatisticsViewController.swift in Sources */,
 				1C326F461E2CADE200DD162F /* BeaconListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
