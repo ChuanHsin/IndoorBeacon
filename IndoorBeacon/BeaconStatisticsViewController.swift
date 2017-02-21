@@ -30,7 +30,7 @@ class BeaconStatisticsViewController: UIViewController, ESTBeaconManagerDelegate
     func beaconManager(_ manager: Any, didRangeBeacons beacons: [CLBeacon],in region: CLBeaconRegion) {
         
         //let sortedBeacons = beacons.filter{ $0.accuracy > 0.0 }.sorted{ $0.accuracy < $1.accuracy }
-        // ($0.accuracy > 0.0)&&(1.5 > $0.accuracy)抓取0~1.5的值
+        // ($0.accuracy > 0.0)&&(1.5 > $0.accuracy)抓取0~1.5m的值
         let sortedBeacons = beacons.filter(){ ($0.accuracy > 0.0)&&(1.5 > $0.accuracy) }.sorted(){ $0.accuracy < $1.accuracy }
         
         
@@ -50,6 +50,7 @@ class BeaconStatisticsViewController: UIViewController, ESTBeaconManagerDelegate
                 
                 count = count + 1
                 SumRSSI = SumRSSI + (nearest.rssi)
+                
                 
                 
                 SumDist = Double(nearest.accuracy) + SumDist

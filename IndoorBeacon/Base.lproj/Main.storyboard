@@ -161,7 +161,7 @@
         <!--BeaconStatistics-->
         <scene sceneID="XEg-Jd-hv1">
             <objects>
-                <viewController id="7mZ-Ul-ad5" userLabel="BeaconStatistics" customClass="BeaconStatisticsViewController" customModule="IndoorBeacon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7mZ-Ul-ad5" userLabel="BeaconStatistics" customClass="BeaconTestMajorViewController" customModule="IndoorBeacon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aqK-jz-YtC"/>
                         <viewControllerLayoutGuide type="bottom" id="KNV-7G-j2n"/>
@@ -199,7 +199,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.89534557585393004" green="0.9548839490885398" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.792156862745098" green="0.94509803921568625" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Beacon Statistics" id="uiG-je-qqk"/>
                     <connections>
@@ -213,12 +213,60 @@
             </objects>
             <point key="canvasLocation" x="1345" y="1361"/>
         </scene>
+        <!--BeaconTestMajor-->
+        <scene sceneID="IIk-cm-dDe">
+            <objects>
+                <viewController id="VuJ-Ma-btT" customClass="BeaconTestMajorViewController" customModule="IndoorBeacon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HlW-wf-QFZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="UNs-st-iYY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CIJ-oA-mhO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beacon-1st : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM3-UO-oie">
+                                <rect key="frame" x="46" y="100" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beacon-2nd : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN0-6a-ggo">
+                                <rect key="frame" x="46" y="170" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beacon-3rd : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-r1-Vf4">
+                                <rect key="frame" x="46" y="240" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.792156862745098" green="0.94509803921568625" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BeaconTestMajor" id="qxI-by-R7a"/>
+                    <connections>
+                        <outlet property="BeaconFirstLabel" destination="aM3-UO-oie" id="pi0-sr-5oz"/>
+                        <outlet property="BeaconSecondLabel" destination="uN0-6a-ggo" id="WMF-c5-XUw"/>
+                        <outlet property="BeaconThirdLabel" destination="KzV-r1-Vf4" id="DgS-kd-XBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPw-Np-hfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="1361"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nTg-KM-40t">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gU3-jP-PkN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UZU-z1-4kW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -226,6 +274,7 @@
                         <segue destination="TjW-iD-tXR" kind="relationship" relationship="viewControllers" id="Hh6-sa-gzq"/>
                         <segue destination="CvP-yI-pua" kind="relationship" relationship="viewControllers" id="gDE-zb-NMq"/>
                         <segue destination="Yfi-fD-KKK" kind="relationship" relationship="viewControllers" id="zBU-rF-cVT"/>
+                        <segue destination="R59-10-3ex" kind="relationship" relationship="viewControllers" id="BsC-Dm-jmH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUi-oT-c6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -282,12 +331,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="7mZ-Ul-ad5" kind="relationship" relationship="rootViewController" id="QGB-tU-dLv"/>
+                        <segue destination="7mZ-Ul-ad5" kind="relationship" relationship="rootViewController" id="1Rs-Za-ehN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TzE-8n-d4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1346" y="629"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="0tT-p9-gtr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R59-10-3ex" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="m8U-aI-Zka"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OO9-lg-sa2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VuJ-Ma-btT" kind="relationship" relationship="rootViewController" id="LRZ-7y-vvj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgG-le-vUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="629"/>
         </scene>
     </scenes>
     <resources>
